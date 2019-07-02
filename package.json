@@ -1,0 +1,20 @@
+{
+  "name": "xpreser-new-app-edge",
+  "version": "0.1.2",
+  "description": "New Xjs Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": "https://github.com/xpresserjs/new-app-edge-js.git",
+  "author": "xpresserjs",
+  "license": "MIT",
+  "dependencies": {
+    "express-edge": "^1.0.0",
+    "xpresser": "^0.0.53"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
