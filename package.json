@@ -5,16 +5,20 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "https://github.com/xpresserjs/new-app-edge-js.git",
   "author": "xpresserjs",
   "license": "MIT",
   "dependencies": {
     "express-edge": "^1.0.0",
-    "xpresser": "^0.0.61"
+    "xpresser": "^0.0.61",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
-  }
+  },
+  "snyk": true
 }
