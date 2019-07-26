@@ -8,7 +8,8 @@ Example app using [`edge.js`](https://edge.adonisjs.com) templates, Showing a si
 For same example using [`ejs`](https://ejs.co) templates - [Xpresser Example App Using Ejs](https://github.com/xpresserjs/new-app)
 
 ### Includes 
-Xpresser Default Page using [Bulma](https://bulma.io) & [Bootstrap](https://getbootstrap.com)
+Xpresser Default Page using [Bulma](https://bulma.io) & [Bootstrap](https://getbootstrap.com).
+
 Theme can be changed in [`app.js`](./app.js)
 
 ### Use

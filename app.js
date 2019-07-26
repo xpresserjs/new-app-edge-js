@@ -1,3 +1,4 @@
+// Import Xpresser
 const xpresser = require("xpresser");
 
 
@@ -26,7 +27,7 @@ xpresser({
     /**
      * Set Name of Application.
      */
-    name: "Xjs App",
+    name: "Xpresser Edge App",
 
     /**
      * Project Settings.
@@ -89,5 +90,12 @@ xpresser({
         use: 'express-edge',
         // Set extension of templates
         extension: 'edge'
+    },
+
+    /**
+     * Enable Session
+     */
+    session: {
+        startOnBoot: true
     }
 });
