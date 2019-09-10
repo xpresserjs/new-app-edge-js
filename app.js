@@ -1,5 +1,6 @@
 // Import Xpresser
 const xpresser = require("xpresser");
+const {engine} = require("express-edge");
 
 
 /**
@@ -87,7 +88,7 @@ xpresser({
      * In order to use express-edge.
      */
     template: {
-        use: 'express-edge',
+        use: engine,
         // Set extension of templates
         extension: 'edge'
     },

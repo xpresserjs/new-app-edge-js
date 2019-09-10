@@ -11,8 +11,8 @@
   "author": "xpresserjs",
   "license": "MIT",
   "dependencies": {
-    "express-edge": "^1.0.0",
-    "xpresser": "latest"
+    "express-edge": "^2.0.0",
+    "xpresser": "^0.1.17"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
