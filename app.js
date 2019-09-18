@@ -18,8 +18,7 @@ const {engine} = require("express-edge");
  *
  *      xpresser('path/to/config.js');
  */
-
-xpresser({
+const config = {
     /**
      * Set Application Environment.
      */
@@ -99,4 +98,6 @@ xpresser({
     session: {
         startOnBoot: true
     }
-});
+};
+
+xpresser(config).boot();
