@@ -19,7 +19,7 @@
         <ul>
             @each((detail, key) in info)
                 <li>
-                    <strong class="is-uppercase has-text-grey">{{key }}:</strong> 
+                    <strong class="is-uppercase has-text-grey">{{key }}:</strong>
                     <span class="ml-3">{{detail}}</span>
                 </li>
             @endeach
@@ -27,7 +27,7 @@
 
 
         <div class="mvh-10 has-text-centered">
-            <a href="{{route('master.edge') }}" class="button is-primary is-hovered">
+            <a href="{{ ctx.route('master.edge') }}" class="button is-primary is-hovered">
                 Back to Home
             </a>
         </div>

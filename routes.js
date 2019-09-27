@@ -1,9 +1,8 @@
 /**
  * Xpresser Router = $.router;
- * To make it neater
- * router.get() instead of $.router.get()
+ * @type XpresserRouter
  */
-const router = $.router;
+const route = $.router;
 
 /**
  * Name in routes is not compulsory.
@@ -11,6 +10,5 @@ const router = $.router;
  * You can use the .actionAsName() function,
  * As seen in about route
  */
-
-router.get('/', 'App@index').name('master.edge');
-router.get('/about', 'App@about').actionAsName();
+route.get('/', 'App@index').name('master.edge');
+route.get('/about', 'App@about').actionAsName();
