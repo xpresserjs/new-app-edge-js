@@ -10,5 +10,5 @@ const route = $.router;
  * You can use the .actionAsName() function,
  * As seen in about route
  */
-route.get('/', 'App@index').name('master.edge');
+route.get('/', 'App@index').name('index');
 route.get('/about', 'App@about').actionAsName();
