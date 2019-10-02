@@ -1,6 +1,6 @@
 {
   "name": "xpreser-new-app-edge",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "New Xpresser Project",
   "main": "app.js",
   "scripts": {
@@ -12,9 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "express-edge": "^2.0.0",
-    "xpresser": "^0.1.29"
+    "xpresser": "^0.1.30"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.3"
   }
 }
