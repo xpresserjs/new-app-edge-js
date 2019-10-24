@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "express-edge": "^2.0.1",
-    "xpresser": "^0.1.47"
+    "xpresser": "^0.1.52"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
