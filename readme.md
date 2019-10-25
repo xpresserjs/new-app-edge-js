@@ -1,5 +1,7 @@
 # Xpresser Example App Using Ejs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xpresserjs/new-app-edge-js.svg)](https://greenkeeper.io/)
+
 ![Alt text](https://cdn.jsdelivr.net/npm/xpresser/xpresser-logo-black.png "Xpresser Logo")
 
 
