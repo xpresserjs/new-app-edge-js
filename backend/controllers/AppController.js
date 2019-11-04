@@ -16,10 +16,10 @@ class AppController extends $.controller {
      * Whatever is returned in boot method
      * is passed as the second method on all methods.
      *
-     * @param {XpresserHttp.Engine} x
+     * @param {Xpresser.Http} http
      * @return {object|*}
      */
-    static boot(x) {
+    static boot(http) {
         /**
          * Set a user variable that will be passed to all methods
          * This should maybe come from a database.
@@ -42,19 +42,19 @@ class AppController extends $.controller {
          * Helps you get config variables or set default if they don't
          * exist to avoid errors.
          */
-        let theme = x.query("theme", null);
+        let theme = http.query("theme", null);
 
         // Check if theme is bulma/bootstrap
         if (["bulma", "bootstrap"].includes(theme)) {
 
             // Set Theme to session
-            x.session.theme = theme;
+            http.session.theme = theme;
 
         } else {
             // if no query and session exists, we set theme to session value
-            if (x.session.theme) {
+            if (http.session.theme) {
 
-                theme = x.session.theme
+                theme = http.session.theme
 
             } else {
 
@@ -88,13 +88,13 @@ class AppController extends $.controller {
      * can be static or direct..
      *
      * About Page action is static for test.
-     * @param {XpresserHttp.Engine} x - RequestEngine Instance
+     * @param {Xpresser.Http} http - RequestEngine Instance
      * @param user  - Imported form boot method
      * @param template - Imported form boot method
      */
-    index(x, {user, theme}) {
+    index(http, {user, theme}) {
         // Return index view in views folder
-        return x.view(theme + '/index', {
+        return http.view(theme + '/index', {
             user,
         })
     }
@@ -105,11 +105,11 @@ class AppController extends $.controller {
      *
      * A static method also works depending on your preference.
      *
-     * @param {XpresserHttp.Engine} x - RequestEngine Instance
+     * @param {Xpresser.Http} http - RequestEngine Instance
      * @param user - Imported from boot method
      * @param theme - Imported from boot method
      */
-    static about(x, {user, theme}) {
+    static about(http, {user, theme}) {
         /**
          * Set contact details
          *
@@ -122,7 +122,7 @@ class AppController extends $.controller {
             address: "Somewhere on earth, maybe Astro world!"
         };
 
-        return x.view(theme + '/about', {
+        return http.view(theme + '/about', {
             user,
             info,
         });
