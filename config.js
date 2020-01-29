@@ -60,7 +60,7 @@ module.exports = {
     server: {
         domain: 'localhost',
         // If empty url will be http://{domain}:{port}
-        baseUrl: '/',
+        baseUrl: '',
         // Server Port
         port: 3000,
 
