@@ -1,0 +1,12 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - express-edge > edge.js > lodash:
+        patched: '2020-05-01T02:06:13.962Z'
+    - xpresser > knex > lodash:
+        patched: '2020-05-01T02:06:13.962Z'
+    - xpresser > object-collection > lodash:
+        patched: '2020-05-01T02:06:13.962Z'
