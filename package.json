@@ -5,19 +5,23 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": "https://github.com/xpresserjs/new-app-edge-js.git",
   "author": "xpresserjs",
   "license": "MIT",
   "dependencies": {
     "express-edge": "^2.0.2",
-    "xpresser": "^0.2.29"
+    "xpresser": "^0.2.29",
+    "snyk": "^1.336.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
   },
   "engines": {
     "node": ">=10"
-  }
+  },
+  "snyk": true
 }
