@@ -74,7 +74,7 @@ module.exports = {
         /**
          * Use Session Config
          */
-        use: {session: true}
+        use: {session: true, flash: true}
     },
 
     /**
@@ -90,6 +90,6 @@ module.exports = {
      * Enable Session
      */
     session: {
-        startOnBoot: true
+        useDefault: true
     }
 };
