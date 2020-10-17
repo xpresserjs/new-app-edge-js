@@ -12,10 +12,10 @@
   "license": "MIT",
   "dependencies": {
     "express-edge": "^2.0.2",
-    "xpresser": "^0.2.79"
+    "xpresser": "^0.2.81"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.5"
   },
   "engines": {
     "node": ">=10"
