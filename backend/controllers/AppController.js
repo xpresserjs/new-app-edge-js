@@ -57,7 +57,7 @@ class AppController extends $.controller {
             } else {
 
                 // Get Config {project.theme} else return null
-                theme = $.$config.get('project.theme', null);
+                theme = $.config.get('project.theme', null);
 
                 // If null we need a config.. we throw error.
                 if (theme === null) {
