@@ -1,9 +1,11 @@
+const {ControllerClass} = require("xpresser");
+
 /**
  * AppController
  * @class
- * @extends $.controller
+ * @extends ControllerClass
  */
-class AppController extends $.controller {
+class AppController extends ControllerClass {
 
     /**
      * Boot Method

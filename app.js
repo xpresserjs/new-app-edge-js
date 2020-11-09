@@ -4,4 +4,5 @@ const xpresser = require("xpresser");
 const config = require("./config");
 
 // Initialize and boot() xpresser
-xpresser(config).boot();
+xpresser.init(config).boot();
+

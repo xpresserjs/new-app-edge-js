@@ -3,7 +3,8 @@
     "main": "app.js",
     "start_cron": "node",
     "start_server": "nodemon",
-    "start_console": "node"
+    "start_console": "node",
+    "jobs_path": "backend/jobs"
   },
   "prod": {
     "main": "app.js",
@@ -11,7 +12,7 @@
     "stop_cron": "pm2 stop",
     "start_server": "pm2 start",
     "stop_server": "pm2 stop",
-    "start_console": "node"
-  },
-  "jobs_path": "backend/jobs"
+    "start_console": "node",
+    "jobs_path": "backend/jobs"
+  }
 }
