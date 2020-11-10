@@ -46,12 +46,6 @@ module.exports = {
          * For all default Config options.
          */
         backend: 'base://backend',
-
-        /**
-         * By default if not set xjs will use base://backend/routes.js
-         * Since this is not a framework app..
-         */
-        routesFile: 'base://routes.js'
     },
 
     /**
