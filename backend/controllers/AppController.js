@@ -1,4 +1,5 @@
-const {ControllerClass} = require("xpresser");
+const {getInstance, ControllerClass} = require("xpresser");
+const $ = getInstance();
 
 /**
  * AppController
@@ -38,7 +39,7 @@ class AppController extends ControllerClass {
          * we have to save the theme in session in case switch is used.
          * Only required for the switch theme button function.
          *
-         * $.$config is an instance of https://npmjs.com/package/object-collection
+         * $.config is an instance of https://npmjs.com/package/object-collection
          * Helps you get config variables or set default if they don't
          * exist to avoid errors.
          */

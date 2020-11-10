@@ -1,7 +1,8 @@
+const {getInstanceRouter} = require('xpresser');
 /**
  * Xpresser Router = $.router;
  */
-const route = $.router;
+const route = getInstanceRouter();
 
 /**
  * Name in routes is not compulsory.

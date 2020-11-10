@@ -13,7 +13,7 @@
   "dependencies": {
     "express-edge": "^2.0.2",
     "lodash": "^4.17.20",
-    "xpresser": "^0.3.5"
+    "xpresser": "^0.3.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"

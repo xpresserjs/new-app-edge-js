@@ -4,5 +4,7 @@ const xpresser = require("xpresser");
 const config = require("./config");
 
 // Initialize and boot() xpresser
-xpresser.init(config).boot();
+xpresser.init(config, {
+    exposeDollarSign: false
+}).boot();
 
