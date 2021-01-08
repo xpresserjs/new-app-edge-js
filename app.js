@@ -1,10 +1,8 @@
 // Import Xpresser
-const xpresser = require("xpresser");
+const {init} = require("xpresser");
 // Import Config
 const config = require("./config");
 
 // Initialize and boot() xpresser
-xpresser.init(config, {
-    exposeDollarSign: false
-}).boot();
+init(config, {exposeDollarSign: false}).boot();
 

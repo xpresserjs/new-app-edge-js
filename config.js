@@ -68,7 +68,7 @@ module.exports = {
         /**
          * Use Session Config
          */
-        use: {session: true, flash: true}
+        use: {flash: true}
     },
 
     /**
@@ -79,11 +79,4 @@ module.exports = {
         // Set extension of templates
         extension: 'edge'
     },
-
-    /**
-     * Enable Session
-     */
-    session: {
-        useDefault: true
-    }
 };

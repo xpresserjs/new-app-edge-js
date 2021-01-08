@@ -43,7 +43,7 @@ class AppController extends ControllerClass {
          * Helps you get config variables or set default if they don't
          * exist to avoid errors.
          */
-        let theme = http.query("theme", null);
+        let theme = http.query("theme");
 
         // Check if theme is bulma/bootstrap
         if (["bulma", "bootstrap"].includes(theme)) {
@@ -111,6 +111,7 @@ class AppController extends ControllerClass {
      * @param theme - Imported from boot method
      */
     static about(http, {user, theme}) {
+
         /**
          * Set contact details
          *
