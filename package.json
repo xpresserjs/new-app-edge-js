@@ -11,16 +11,16 @@
   "author": "xpresserjs",
   "license": "MIT",
   "dependencies": {
-    "@xpresser/session": "^1.3.0",
+    "@xpresser/session": "^1.4.1",
     "express-edge": "^2.0.2",
-    "lodash": "^4.17.20",
-    "xpresser": "^0.11.6"
+    "lodash": "^4.17.21",
+    "xpresser": "^0.12.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.7",
-    "xjs-cli": "^0.2.3"
+    "xjs-cli": "^0.2.4"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   }
 }
