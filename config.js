@@ -52,9 +52,8 @@ module.exports = {
      * By default xjs sets this for you.
      */
     server: {
-        domain: 'localhost',
-        // If empty url will be http://{domain}:{port}
-        baseUrl: '',
+        baseUrl: '/',
+        
         // Server Port
         port: 3000,
 
@@ -64,11 +63,6 @@ module.exports = {
          * by setting this to false
          */
         includePortInUrl: true,
-
-        /**
-         * Use Session Config
-         */
-        use: {flash: true}
     },
 
     /**
