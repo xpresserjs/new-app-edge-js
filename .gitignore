@@ -6,3 +6,4 @@ node_modules
 *.log
 yarn.lock
 storage/framework
+package-lock.json
