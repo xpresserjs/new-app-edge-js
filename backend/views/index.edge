@@ -1,5 +1,4 @@
-@layout("master")
-@section("content")
+@component('components/master', {ctx})
     <div class="box">
         <h1 class="title">
             <span class="has-text-grey-light">Hello</span> {{user.name }},
@@ -21,4 +20,4 @@
             </a>
         </div>
     </div>
-@endsection
+@end

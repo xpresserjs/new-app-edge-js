@@ -1,5 +1,5 @@
 // Import Edge Template Engine
-const {engine} = require("express-edge");
+const engine = require("express-edge");
 
 /**
  * Your App Configuration
@@ -24,7 +24,7 @@ module.exports = {
 
 
     /**
-     * Path settings..
+     * Path settings.
      */
     paths: {
 
@@ -49,16 +49,14 @@ module.exports = {
     },
 
     /**
-     * By default xjs sets this for you.
+     * By default, xjs sets this for you.
      */
     server: {
-        baseUrl: '/',
-        
         // Server Port
         port: 3000,
 
         /**
-         * By default port is excluded if its [80, 443]
+         * By default, port is excluded if its [80, 443]
          * You can also decide to exclude port in url
          * by setting this to false
          */
@@ -66,7 +64,7 @@ module.exports = {
     },
 
     /**
-     * In order to use express-edge.
+     * To use express-edge.
      */
     template: {
         use: engine,
